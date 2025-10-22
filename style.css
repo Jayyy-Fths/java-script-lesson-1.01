@@ -1,0 +1,111 @@
+:root {
+  --bs-primary: #b45309;   /* burnt orange */
+  --bs-secondary: #78350f; /* chestnut brown */
+  --bs-info: #d97706;      /* amber */
+  --bs-danger: #dc2626;    /* deep red */
+  --bs-success: #15803d;   /* earthy green */
+  --bs-body-bg: #fff7ed;   /* light fall cream */
+  --bs-body-color: #431407;/* dark brown */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+header {
+  background: linear-gradient(120deg, var(--bs-primary), var(--bs-secondary));
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+#out {
+  min-height: 8rem;
+  background-color: #fef3c7; /* warm tan */
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+/* Distinct button styles */
+#btnGreet {
+  background-color: #b45309;
+  border-color: #9a3412;
+  color: #fff;
+}
+#btnGreet:hover { background-color: #9a3412; }
+
+#btnAvg {
+  background-color: #15803d;
+  border-color: #166534;
+  color: #fff;
+}
+#btnAvg:hover { background-color: #166534; }
+
+#btnTime {
+  background-color: #d97706;
+  border-color: #b45309;
+  color: #fff;
+}
+#btnTime:hover { background-color: #b45309; }
+
+#btnRandom {
+  background-color: #78350f;
+  border-color: #451a03;
+  color: #fff;
+}
+#btnRandom:hover { background-color: #451a03; }
+
+#btnClear {
+  background-color: #dc2626;
+  border-color: #991b1b;
+  color: #fff;
+}
+#btnClear:hover { background-color: #991b1b; }
+
+/* New button styles */
+#btnChangeTitle {
+  background-color: #4f46e5;
+  border-color: #4338ca;
+  color: #fff;
+}
+#btnChangeTitle:hover { background-color: #4338ca; }
+
+#btnCycleColor {
+  background-color: #7c3aed;
+  border-color: #6d28d9;
+  color: #fff;
+}
+#btnCycleColor:hover { background-color: #6d28d9; }
+
+#btnBgColor {
+  background-color: #2563eb;
+  border-color: #1d4ed8;
+  color: #fff;
+}
+#btnBgColor:hover { background-color: #1d4ed8; }
+
+#btnDouble {
+  background-color: #ea580c;
+  border-color: #c2410c;
+  color: #fff;
+}
+#btnDouble:hover { background-color: #c2410c; }
+
+/* Angry mode styles */
+.angry-mode {
+  --bs-primary: #dc2626 !important;
+  --bs-secondary: #991b1b !important;
+  --bs-info: #ef4444 !important;
+  --bs-danger: #b91c1c !important;
+  --bs-success: #7f1d1d !important;
+  --bs-body-bg: #fee2e2 !important;
+  --bs-body-color: #450a0a !important;
+  transition: all 0.3s ease;
+}
