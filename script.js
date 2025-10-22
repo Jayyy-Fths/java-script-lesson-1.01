@@ -162,14 +162,7 @@ function BgColor () {
   render(`Color Theme: ${themeNames[nextIndex]} 🎨`)
 }
 
-/* 
-  Function 4 — randomBetween()
-  -----------------------------
-  - Prompt the user for a minimum and maximum number
-  - Generate a random number between them
-  - Display the result
-  - Handle invalid input (like blanks or min >= max)
-*/
+
 function double () {
   document.body.classList.toggle('angry-mode')
   if (document.body.classList.contains('angry-mode')) {
@@ -191,17 +184,11 @@ function double () {
     render('Calm mode restored 😊')
   }
 }
-/* 
-  Function 5 — clearOutput()
-  ---------------------------
-  - Clear whatever is inside #out
-  - Replace it with a placeholder message like "Output cleared."
-*/
+
 function clearOutput () {
   render('Output cleared.')
 }
 
-// ---- Event listeners for the demo buttons ----
 document.getElementById('btnGreet').addEventListener('click', greet)
 document.getElementById('btnAvg').addEventListener('click', averageNumbers)
 document.getElementById('btnTime').addEventListener('click', timeOfDay)
@@ -212,17 +199,4 @@ document.getElementById('btnBgColor').addEventListener('click', BgColor)
 document.getElementById('btnDouble').addEventListener('click', double)
 document.getElementById('btnClear').addEventListener('click', clearOutput)
 
-/* 
-  ------------------------------------------
-  Student Challenge Section 
-  ------------------------------------------
-  Add 4 new functions here, each with its own button in index.html:
-  
-  1) Change the page title text to something new.
-  2) Cycle the output box text color (switch to a different color each time clicked).
-  3) Change BOTH the text and background color of #out.
-  4) Angry Mode (toggle) — switch the Bootstrap theme colors to look "angry."
-  
-  Write each function below, and don’t forget to connect each one 
-  to a new button in index.html using addEventListener.
-*/
+
